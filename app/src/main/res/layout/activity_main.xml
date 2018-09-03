@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,6 +24,7 @@
                 android:gravity="center"
                 android:padding="4dp"
                 android:text="Team A"
+                android:textSize="32sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -32,7 +34,7 @@
                 android:gravity="center"
                 android:padding="4dp"
                 android:text="0"
-                android:textSize="32dp"
+                android:textSize="48sp"
                 android:textStyle="bold" />
 
             <Button
@@ -74,6 +76,7 @@
                 android:gravity="center"
                 android:padding="4dp"
                 android:text="Team B"
+                android:textSize="32sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -83,7 +86,7 @@
                 android:gravity="center"
                 android:padding="4dp"
                 android:text="0"
-                android:textSize="32dp"
+                android:textSize="48dp"
                 android:textStyle="bold" />
 
             <Button
@@ -120,7 +123,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:onClick="resetScore"
-        android:text="RESET"
-        android:textStyle="bold" />
+        android:text="Reset"
+        android:textSize="32sp"/>
 
 </RelativeLayout>
