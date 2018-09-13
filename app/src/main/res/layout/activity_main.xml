@@ -19,47 +19,33 @@
             tools:context=".MainActivity">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:padding="4dp"
-                android:text="Team A"
-                android:textSize="32sp"
-                android:textStyle="bold" />
+                style="@style/TeamNameText"
+                android:text="@string/teamA"
+                />
 
             <TextView
+                style="@style/TeamScoreText"
                 android:id="@+id/team_a_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:padding="4dp"
                 android:text="0"
-                android:textSize="48sp"
-                android:textStyle="bold" />
+                />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                style="@style/ButtonText"
                 android:onClick="addThreeToScore"
-                android:text="+3 points"
-                android:textStyle="bold" />
+                android:text="@string/threePoints"
+                />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                style="@style/ButtonText"
                 android:onClick="addTwoToScore"
-                android:text="+2 points"
-                android:textStyle="bold" />
+                android:text="@string/twoPoints"
+                />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                style="@style/ButtonText"
                 android:onClick="addOneToScore"
-                android:text="Free Throw"
-                android:textStyle="bold" />
+                android:text="@string/onePoint"
+                />
 
         </LinearLayout>
 
@@ -71,58 +57,42 @@
             tools:context=".MainActivity">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:padding="4dp"
-                android:text="Team B"
-                android:textSize="32sp"
-                android:textStyle="bold" />
+                style="@style/TeamNameText"
+                android:text="@string/teamB"
+                />
 
             <TextView
+                style="@style/TeamScoreText"
                 android:id="@+id/team_b_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:padding="4dp"
                 android:text="0"
-                android:textSize="48sp"
-                android:textStyle="bold" />
+                />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                style="@style/ButtonText"
                 android:onClick="addThreeToScoreForB"
-                android:text="+3 points"
-                android:textStyle="bold" />
+                android:text="@string/threePoints"
+                />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                style="@style/ButtonText"
                 android:onClick="addTwoToScoreForB"
-                android:text="+2 points"
-                android:textStyle="bold" />
+                android:text="@string/twoPoints"
+                />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                style="@style/ButtonText"
                 android:onClick="addOneToScoreForB"
-                android:text="Free Throw"
-                android:textStyle="bold" />
+                android:text="@string/onePoint"
+                />
 
         </LinearLayout>
 
     </LinearLayout>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        style="@style/ResetButtonStyle"
         android:onClick="resetScore"
-        android:text="Reset" />
+        android:text="@string/resetScores"
+        />
 
 </RelativeLayout>
